@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-weight: 500;
+    background-color: #773344;
+    color: #000;
+    height: 100vh;  
+}
+#heading {
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    margin-bottom: 35px;
+    font-weight: 700;
+    color: #F5E9E2;
+}
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    font-weight: bold;
+    background-color: #E3B5A4;
+    border: 5px solid #773344;
+    box-shadow: 0 10px 30px #F5E9E2;
+    border-radius: 25px;
+    width: 700px;
+}
+.arrow-down {
+    width: 0; 
+    height: 0;    
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 10px solid #fff;
+}
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;   
+    border-bottom: 10px solid white;
+}
+.timers-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.SetTimer-Buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;   
+}
+.SetTimer-Buttons > button {
+    background-color: #773344;
+    color: #fff;
+    border-radius: 3px;
+    border: none; 
+    padding: 10px 25px;
+    margin: 4px 15px;
+}
+.Timer > #timer-label, #time-left {
+    margin: 0;
+}
+.Controls > button {
+    background-color: #773344;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    padding: 30px 30px;
+    margin: 4px 5px;
+}
+button:hover {
+    background-color: #444;
+    outline: 1px solid #fff;
+    outline-offset: -1px;
+    cursor: pointer;
+}
+i {
+    font-size: 20px;
+    background-color: #000;   
+}
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #F5E9E2;
+}
+a {
+    color: #F5E9E2;
+    text-decoration: none;
+}
+a:hover {
+    color: #fff;
+}
+@media only screen and (max-width: 480px) {
+
+    #heading {
+        font-size: 6vw;
+    }
+
+    .app-wrapper {
+        width: 300px;
+    }
+    .timers-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .SetTimers {
+        margin: 10px 0;
+    }
+    .SetTimer-Buttons {
+        justify-content: center;   
+    }         
+    footer {
+        font-size: 12px;
+    }
+    
+}
